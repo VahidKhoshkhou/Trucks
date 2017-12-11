@@ -63,7 +63,7 @@ int place_r_oneSol(pack_t *packs, int packnum, int *trucks, int ntcurr, int leve
 	if (level >= packnum) {
 		return 1;
 	}
-	/** in order to add the previously added trucks */
+	
 	for (i = 0; i < ntcurr; i++) {
 		if (trucks[i] + packs[level].weight <= MAX) {
 			packs[level].truckId = i;
